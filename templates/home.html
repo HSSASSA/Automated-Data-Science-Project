@@ -1,0 +1,196 @@
+<head>
+    <div style="background-color:royalblue;padding:10px;border-radius:10px">
+        <h1 style="color:white;text-align:center;">Automated Machine Learning Application</h1>
+    </div>
+
+</head>
+
+<body>
+    
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .mySlides {display:contents}
+        img {vertical-align:auto;}
+
+        /* Slideshow container */
+        .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 30%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Caption text */
+        .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+        background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+        }
+        </style>
+        <!-- </head> <body>--> 
+
+        <div class="slideshow-container">
+
+            <div2 class="mySlides fade" margin="center">
+                <div class="numbertext" style="background-color: rgb(95, 143, 239);">1 / 6</div>
+                <img src="https://cdn.prod.website-files.com/65e7297194523c404b923b44/662e717bbeab55128dd63396_how-to-create-welcome-page-1.jpeg" style="width:100%">
+                <div class="text" style="color:#370707; text-shadow: #ff1515; border: #ff1515; background-color: rgb(95, 143, 239); bottom: 0cap; opacity: inherit;"> <strong>Content of the App 👉</strong> </div>
+            </div2>
+            
+            <div class="mySlides fade">
+                <div class="numbertext" style="background-color: rgb(95, 143, 239);">2 / 6</div>
+
+                <img src="https://rivery.io/wp-content/uploads/2023/05/Data-transformation@2x.png" alt="margin" style="width:100%">
+                <div class="text" style="color:#370707; text-shadow: #ff1515; border: #ff1515; background-color: rgb(95, 143, 239); bottom: 0cap; opacity: inherit;"><strong>Transform your data!</strong> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext" style="background-color: rgb(95, 143, 239);">3 / 6</div>
+            <img src="https://images.ctfassets.net/te2janzw7nut/6VoWjuosDdasNydaWot2ZM/34a7893a8c72203dcbee5d452c70e36b/data-visualization.jpg?w=500&h=332&fl=progressive&q=100&fm=jpg" style="width:100%">
+            <!-- https://www.w3schools.com/howto/img_mountains_wide.jpg -->
+            <div class="text" style="color:#370707; text-shadow: #ff1515; border: #ff1515; background-color: rgb(95, 143, 239); opacity: inherit;"><strong>Visualize it!</strong> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext" style="background-color: rgb(95, 143, 239);">4 / 6</div>
+            <img src="https://360digitmg.com/uploads/blog/7cb311c355ff80bb4a34e1faba04fb2e.png" style="width:100%">
+            <!-- https://www.w3schools.com/howto/img_mountains_wide.jpg -->
+            <div class="text" style="color:#370707; text-shadow: #ff1515; border: #ff1515; background-color: rgb(95, 143, 239); opacity: inherit;"><strong>Explore and analyse it!</strong> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext" style="background-color: rgb(95, 143, 239);">5 / 6</div>
+            <img src="https://blog.talent500.co/wp-content/uploads/2025/01/Machine_Learning-1024x819-1.jpg" style="width:100%">
+            <!-- https://www.w3schools.com/howto/img_mountains_wide.jpg -->
+            <div class="text" style="color:#370707; text-shadow: #ff1515; border: #ff1515; background-color: rgb(95, 143, 239); opacity: inherit; bottom: 20%;"><strong>Train robust machine learning models on it!</strong> </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext slideshow-container" style="background-color: rgb(95, 143, 239);">6 / 6</div>
+            <img src="https://builtin.com/sites/www.builtin.com/files/2023-01/machine-learning-stock-prediction.jpg" style="width:100%">
+            <!-- https://www.w3schools.com/howto/img_mountains_wide.jpg -->
+            <div class="text" style="color:#370707; text-shadow: #ff1515; border: #ff1515; background-color: rgb(95, 143, 239); opacity: inherit; bottom: 0%;"><strong>Make predictions!</strong> </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
