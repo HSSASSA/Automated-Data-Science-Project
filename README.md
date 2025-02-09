@@ -1,6 +1,6 @@
 # Streamlit Data Transformation and Model Training App
 
-This project is a Streamlit application that allows users to upload a CSV file, preprocess the data, visualize it, make EDA with Gemini's agent on it, train machine learning models and make predictions using the best model.
+This project is a Streamlit application that allows users to upload a CSV file, preprocess the data, visualize it, make EDA with Gemini's agent on it, train machine learning models and make predictions using the best model and the best set of hyperparameters.
 
 ## Project Structure
 
@@ -52,20 +52,34 @@ streamlit-app
 
 2. **Upload a CSV file:**
    - Use the file uploader in the application to upload your dataset.
+   - The app will save that uploaded file and give you the options of what you can do with your data.
 
 3. **Data Transformation:**
    - The application will handle missing values, encode categorical columns, and scale numerical columns.
+4. **Data Visualisation:**
+   - You can select the columns for X and Y axis, the app will provide you with a line chart / bar chart / scatter plot.
+   
+6. **EDA with Gemini:**
+   - You can use the Gemini agent for automatic exploratory data analysis. 
+   
+7. **Model Training:**
+   - You can shoose the task type (classification or regression), and the target column.
+   - The application will train various machine learning models with different hyperparameters and display their performances, and then saves the best model in a pickle file for making predictions.
 
-4. **Model Training:**
-   - The application will train various machine learning models and display the best model for making predictions.
-
+8. **Make predictions:**
+   - After loading data, transform it (specially for the regression task), and training the models, you can make predictions on new data entries.
+   - The app will detect outliers.
+   
 ## Overview of Functionality
 
 - **Data Upload:** Users can upload CSV files containing their datasets.
 - **Data Preprocessing:** The application preprocesses the data by handling missing values, encoding categorical features, and scaling numerical features.
+- **Data Visualisation:** you can make visualisations on your data.
+- **EDA with AI:** a Gemini's agent will help you explore and analanalyze your data. 
 - **Model Training:** Various machine learning models are trained on the preprocessed data, and the best-performing model is identified.
 - **Results Display:** The application displays the transformed data and the results of the model training process.
-
+- **Make predictions:** Lastly you can make predictions.
+  
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
